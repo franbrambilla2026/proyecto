@@ -1,88 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Vida - Alfredo Parte Sáiz</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beato Alfredo Parte Sáiz</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/cuestionario.js" defer></script>
 </head>
-
 <body>
 
-<header>
-    <h1>Vida de Alfredo Parte Sáiz</h1>
-</header>
+    <header class="encabezado">
+        <h1>Beato Alfredo Parte Sáiz</h1>
 
-<nav>
-    <a href="../index.html">Inicio</a>
-    <a href="vida.html">Vida</a>
-    <a href="obra.html">Obra</a>
-    <a href="testimonios.html">Testimonio</a>
-    <a href="legado.html">Legado</a>
-    <a href="condicion.html">Condición</a>
-</nav>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pages/vida.html">Vida</a>
+            <a href="pages/obra.html">Obra</a>
+            <a href="pages/testimonios.html">Testimonios</a>
+            <a href="pages/legado.html">Legado</a>
+            <a href="pages/condicion.html">Condición</a>
+        </nav>
+    </header>
 
-<main>
+    <main>
+        <section class="portada">
+         <img src="img/27-Beato Alfredo Parte-27.jpg"
+         alt="Alfredo Parte Sáiz"
+         class="foto-portada">
+            <h2>Beato Alfredo Parte Sáiz</h2>
+        </section>
 
-<section>
-    <h2>Nacimiento y Familia</h2>
+        <section class="juego">
+            <h2>Juego de preguntas</h2>
+            <p>¿Cuánto sabés sobre Alfredo Parte Sáiz?</p>
 
-    <img src="../img/buscar imagen" alt="Alfredo Parte Sáiz">
+            <form id="cuestionario">
 
-    <p>
-        El Beato Alfredo Parte Sáiz nació el 2 de junio de 1899 en
-        Cilleruelo de Bricia, Burgos, España, dentro de una familia
-        numerosa y profundamente cristiana. Fue el mayor de diez
-        hermanos y uno de ellos, Inocencio, también siguió la vocación
-        escolapia.
-    </p>
-</section>
+                <fieldset class="pregunta">
+                    <legend>1. ¿En qué año nació?</legend>
+                    <label><input type="radio" name="p1" value="a"> 1928</label>
+                    <label><input type="radio" name="p1" value="b"> 1899</label>
+                    <label><input type="radio" name="p1" value="c"> 1936</label>
+                </fieldset>
 
-<section>
-    <h2>Vocación religiosa</h2>
+                <fieldset class="pregunta">
+                    <legend>2. ¿A qué orden religiosa pertenecía?</legend>
+                    <label><input type="radio" name="p2" value="a"> Escuelas Pías</label>
+                    <label><input type="radio" name="p2" value="b"> Jesuitas</label>
+                    <label><input type="radio" name="p2" value="c"> Franciscanos</label>
+                </fieldset>
 
-    <p>
-        Desde joven sintió el llamado de Dios y decidió ingresar a las
-        Escuelas Pías siguiendo el ejemplo de San José de Calasanz.
-        Vistió el hábito escolapio el 1 de agosto de 1915 y realizó
-        su profesión religiosa en 1916. Adoptó el nombre religioso
-        Alfredo de la Virgen.
-    </p>
-</section>
+                <fieldset class="pregunta">
+                    <legend>3. ¿En qué año fue ordenado sacerdote?</legend>
+                    <label><input type="radio" name="p3" value="a"> 1915</label>
+                    <label><input type="radio" name="p3" value="b"> 1928</label>
+                    <label><input type="radio" name="p3" value="c"> 1995</label>
+                </fieldset>
 
-<section>
-    <h2>Formación y sacerdocio</h2>
+                <fieldset class="pregunta">
+                    <legend>4. ¿En qué año fue beatificado?</legend>
+                    <label><input type="radio" name="p4" value="a"> 1995</label>
+                    <label><input type="radio" name="p4" value="b"> 1899</label>
+                    <label><input type="radio" name="p4" value="c"> 1928</label>
+                </fieldset>
 
-    <p>
-        Durante su formación sufrió una grave enfermedad en una pierna,
-        situación que le dejó una dificultad permanente para caminar.
-        A pesar de esta dificultad continuó con perseverancia su camino
-        vocacional y fue ordenado sacerdote en Palencia en 1928.
-    </p>
-</section>
+                <fieldset class="pregunta">
+                    <legend>5. ¿Cuál era su misión principal?</legend>
+                    <label><input type="radio" name="p5" value="a"> La política</label>
+                    <label><input type="radio" name="p5" value="b"> La educación y la fe</label>
+                    <label><input type="radio" name="p5" value="c"> El comercio</label>
+                </fieldset>
 
-<section>
-    <h2>Servicio educativo</h2>
+                <button type="submit">Comprobar respuestas</button>
+                <button type="reset" class="boton-secundario">Volver a empezar</button>
 
-    <p>
-        Su misión principal estuvo relacionada con la educación y el
-        acompañamiento de niños y jóvenes. Desde 1922 desarrolló su
-        tarea en el colegio escolapio de Villacarriedo, donde fue muy
-        querido por sus alumnos. También ejerció como procurador del
-        colegio y dedicó gran parte de su tiempo a los alumnos más
-        pequeños del internado.
-    </p>
-</section>
+                <p id="resultado" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
 
-</main>
-
-<footer>
-    <h2>Representado por:
-        <p>Francisco Brambilla </p>
-            <p>Santino Vargas</p>
-        
-    </p>
-</footer>
+    <footer>
+       
+        <p>Realizado por Francisco Brambilla y Santino Vargas</p>
+    </footer>
 
 </body>
 </html>
